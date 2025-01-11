@@ -1,0 +1,3 @@
+[submodule "hosp"]
+	path = hosp
+	url = https://github.com/rickdev8/hosp.git

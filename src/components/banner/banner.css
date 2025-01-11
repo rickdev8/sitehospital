@@ -1,0 +1,221 @@
+.banner-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 4vw 4vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    height: auto;
+    width: 100%;
+    max-width: 830px;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    margin: 0 auto;
+}
+
+.banner-heading {
+    padding: 0px 0px 0px 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+}
+
+.banner-heading > h2 {
+    color: #041536;
+    display: flex;
+    font-size: 4.9vw;
+}
+
+.banner-subheading {
+    padding: 0px 0px 0px 40px;
+    display: flex;
+    position: relative;
+    height: auto;
+    max-width: 830px;
+    font-size:1.6vw;
+    font-weight: 4500;
+    color: #5C5C5C;
+    align-items: center;
+    flex: 1;
+}
+
+.banner-buttons {
+    padding: 0px 0px 0px 40px;
+    display: flex;
+    gap: 30px;
+    margin: 45px 0px;
+}
+
+.banner-buttons > button {
+    border: 1px solid rgb(122, 122, 122);
+    width: 280px;
+    height: 70px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.banner-appointment-button {
+    color: #FFF;
+    background-color: #174EB2;
+    transition: 0.4s;
+}
+
+.banner-appointment-button:hover, .banner-learn-button:hover{
+    transform: scale(1.06);
+}
+
+.banner-learn-button {
+    transition: 0.4s;
+    color: #081b3f;
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
+
+.banner-graphic {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-graphic > img {
+    mix-blend-mode: multiply;
+    left: -100px;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+}
+
+@media (max-width: 1280px) {
+
+    .banner-container{
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+
+    .banner-buttons > button {
+        width: 220px; /* Ajuste proporcional para telas menores */
+        height: 60px; /* Ajuste proporcional para telas menores */
+        padding: 18px 36px; /* Ajuste o padding proporcionalmente */
+    }
+    .banner-container {
+        padding: 4vw 5vw;
+    }
+
+    
+    .banner-heading > h2 {
+        font-size: 60px;
+    }
+
+    .banner-subheading {
+        font-size:22px;
+    }
+
+    .banner-buttons {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .banner-graphic {
+        max-width: 75%;
+    }
+
+    .banner-graphic > img {
+        width: 90%;
+        max-width: 520px;
+        left: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-buttons > button {
+        width: 180px; /* Ajuste proporcional para telas menores */
+        height: 50px; /* Ajuste proporcional para telas menores */
+        padding: 15px 30px; /* Ajuste o padding proporcionalmente */
+    }
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw 3vw;
+    }
+
+    .banner-content {
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .banner-heading > h2 {
+        font-size: 24px;
+    }
+
+    .banner-subheading {
+        font-size: 10px;
+    }
+
+    .banner-buttons {
+        gap: 10px;
+    }
+
+    .banner-graphic > img {
+        width: 90%;
+        max-width: 450px;
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner-buttons > button {
+        width: 150px; /* Ajuste proporcional para telas menores */
+        height: 40px; /* Ajuste proporcional para telas menores */
+        padding: 12px 24px; /* Ajuste o padding proporcionalmente */
+    }
+    .banner-container {
+        margin-top: 60px;
+        padding: 8vw 2vw;
+    }
+
+    .banner-content {
+        padding: 0 5vw;
+        text-align: center;
+    }
+
+    .banner-heading > h2 {
+        font-size: 20px;
+    }
+
+    .banner-subheading {
+        font-size: 8px;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .banner-graphic > img {
+        width: 100%;
+        max-width: 350px;
+        left: 0;
+    }
+}

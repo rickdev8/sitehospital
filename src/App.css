@@ -1,0 +1,28 @@
+body {
+   background-color: rgba(62, 162, 255, 0.068);
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.services-container, .doctor-container, .container-opinions, .container-partners, .banner-container, .facilities-container, .div-button{
+   opacity: 0;
+   filter: blur(15px);
+   transition: all 1s;
+   transform: translateY(-20%);
+}
+
+.show{
+   transform: translateY(-0%);
+   transition: all 2S;
+   filter: blur(0px);
+   opacity: 1;
+}
+
+
+.banner-container{
+   mix-blend-mode: multiply;
+   
+}

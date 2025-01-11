@@ -1,0 +1,89 @@
+.container-opinions {
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .title-opinion {
+    margin-top: 50px;
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .title-opinion h1 {
+    color: #041536;
+    font-weight: 500;
+  }
+  
+  .opinions-divs {
+    max-width: 1600px;
+    gap: 30px;
+    width: 100%;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+  }
+  
+  .div-opinion {
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.096);
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.863);
+    flex-direction: column;
+    display: flex;
+    width: 100%; /* Largura 100% */
+    max-width: 400px; /* Limite máximo de largura */
+    min-width: 250px; /* Limite mínimo de largura */
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: width 0.3s ease; /* Suaviza a transição ao encolher */
+  }
+  
+  .div-opinion p {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 17px;
+  }
+  
+  .div-opinion img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 25px;
+  }
+  
+  @media (max-width: 1220px) {
+    .opinions-divs {
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px; /* Reduz o padding */
+    }
+  
+    .div-opinion {
+      max-width: 430px; /* Aumenta a largura das divs em telas pequenas */
+      min-width: 100px; /* Ajuste o mínimo para garantir que ainda fiquem razoáveis */
+      height: 480px; /* Ajusta a altura automaticamente para o conteúdo */
+      margin-bottom: 20px; /* Adiciona espaçamento entre as divs */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .opinions-divs {
+      padding: 10px; /* Reduz ainda mais o padding */
+    }
+  
+    .div-opinion {
+      width: 100%; /* As divs ocupam 100% da largura disponível */
+      max-width: 90%; /* Garante que as divs não sejam muito largas */
+      height: auto; /* Ajusta a altura automaticamente */
+    }
+  }
+  

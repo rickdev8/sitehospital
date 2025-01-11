@@ -1,0 +1,184 @@
+.facilities-container {
+    background-color: rgba(252, 252, 252, 0.863);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 50px;
+  }
+  
+  .facilities-title {
+    margin-top: 80px;
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .facilities-title h1 {
+    font-weight: 100;
+    color: #041536;
+    font-size: 44px;
+  }
+  
+  .facilities-text {
+    margin-left: 100px;
+    margin-top: 120px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 60px;
+  }
+  
+  .facilities-text p {
+    color: rgba(0, 0, 0, 0.651);
+    font-size: 22px;
+  }
+  
+  .facilities-text h2 {
+    color: #041536;   
+    font-weight: 400;
+    font-size: 40px;
+  }
+  
+  .facilities-divs {
+    padding: 20px 100px;
+    width: 100%; /* Faz com que ocupe toda a largura disponível */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas lado a lado */
+    gap: 30px; /* Espaçamento entre as colunas */
+    margin-top: 50px;
+    align-items: center; /* Centraliza o conteúdo da grid */
+  }
+  
+  .facilities-img {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 100px;
+  }
+  
+  .imagem1, .imagem2 {
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagem2 {
+    margin-left: -200px;
+    margin-top: 110px;
+  }
+  
+  .imagem1 {
+    position: absolute;
+    margin-top: -120px;
+  }
+  
+  .facilities-img img {
+    width: 100%; /* Ajusta a largura da imagem */
+    max-width: 450px; /* Limita a largura máxima */
+    height: 450px; /* Ajusta a altura da imagem */
+    object-fit: cover;
+  }
+  
+  .facilities-button {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .facilities-button button {
+    width: 100%;
+    height: auto;
+    background-color: rgb(50, 53, 247);
+    color: white;
+    padding: 22px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .facilities-button button:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Move o botão para cima */
+    background-color: white;
+    color: rgb(50, 53, 247);
+    border: 1px solid rgb(50, 53, 247);
+  }
+  
+  /* Responsividade para telas menores que 1024px */
+  @media (max-width: 1280px) {
+    .facilities-divs {
+        width: 100%;
+        margin-bottom: 301px;
+        padding:50px;
+        height: auto;
+        place-items: center;
+        gap: 60px;
+    }
+
+    .facilities-text p {
+      color: rgba(0, 0, 0, 0.651);
+      font-size: 19px;
+    }
+
+    .facilities-text h2 {
+      font-size: 30px;
+    }
+    
+
+    .facilities-title{
+      margin-top: 50px;
+    }
+
+    .facilities-text{
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+  
+    .facilities-img {
+      display: flex;
+      flex-direction: row;
+      width: 400px; /* A imagem ocupa 100% da largura */
+      height: auto; /* Altura automática */
+    }
+  
+    .facilities-img img {
+      width: 450px; /* Imagem ajustada para 100% da largura */
+      max-width: none; /* Remove limite de largura */
+      height: auto; /* Altura ajustada automaticamente */
+    }
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .facilities-title h1 {
+      font-size: 32px; /* Reduz o tamanho do título */
+      margin-top: 20px;
+    }
+  
+    .facilities-text {
+      width: 100%; /* Largura total */
+      margin-top: 30px;
+    }
+  
+    .facilities-text p {
+      font-size: 18px; /* Reduz o tamanho do texto */
+    }
+  
+    .facilities-button button {
+      padding: 18px; /* Reduz o padding do botão */
+      font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+  }
+  
